@@ -5,3 +5,37 @@
     background-color: hsl(47, 88%, 63%);
     font-family: Figtree;
 }
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /*body takes up height of whole screen, not just the box*/
+}
+
+.container{
+    width: 384px; /*measurements from Figma*/
+    height: 522px;
+    border: 2px black solid;
+    border-radius: 15px;
+    background: white;
+    overflow: hidden; /*stops image from covering border*/
+    box-shadow: 8px 8px 0px #000;
+    /* align all content in the container vertically*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image{
+    border-radius: 10px;
+    margin-top: 24px;
+}
+
+.attribution{
+    margin-top: 15px;/**so that bottom shadow appears*/
+}
+
+
+
