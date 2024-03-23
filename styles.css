@@ -9,9 +9,11 @@
 body{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    align-items: center; 
+    /*centers the content vertically*/
+    justify-content: center; 
     height: 100vh; /*body takes up height of whole screen, not just the box*/
+    font-size: 16px;
 }
 
 .container{
@@ -20,17 +22,33 @@ body{
     border: 2px black solid;
     border-radius: 15px;
     background: white;
-    overflow: hidden; /*stops image from covering border*/
+    overflow: hidden; /* stops image from covering border */
     box-shadow: 8px 8px 0px #000;
-    /* align all content in the container vertically*/
+    /* align all content in the container horizontally*/
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+
 .image{
     border-radius: 10px;
     margin-top: 24px;
+}
+
+.text{
+    /* had to add this bg colour as the div element was yellow and exceeded the text box */
+    background-color: white;
+}
+
+.box{
+    /* inline-block so it takes space needed to fit the content row-wise */
+    display: inline-block;
+    padding: 5px 12px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    margin-top: 24px;
+    font-weight: 800;
 }
 
 .attribution{
