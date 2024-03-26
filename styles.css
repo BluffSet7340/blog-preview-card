@@ -24,7 +24,6 @@ body{
 
 .image{
     /* padding on all sides for a centred fit */
-    /* top right bottom left */
     padding: 24px;
 }
 .image img{
@@ -35,7 +34,8 @@ body{
 }
 
 .container{
-    width: 384px; /*measurements from Figma*/
+    /*measurements from Figma*/
+    width: 384px; 
     /* height: 522px; */
     border: 2px black solid;
     background-color: var(--white);
@@ -74,7 +74,9 @@ p{
 }
 
 .date{
-    font-weight: 500;
+    font-size: 15px;
+    font-weight: 600;
+    /* font-size: 15px; */
 }
 
 h2{
@@ -82,7 +84,7 @@ h2{
 }
 
 .footer{
-    /*  */
+    /* places the avatar and author name side by side */
     display: flex;
     flex-direction: row;
     align-items: center;
